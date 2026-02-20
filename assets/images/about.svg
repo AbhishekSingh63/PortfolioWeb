@@ -1,0 +1,12 @@
+<svg width="500" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="600" fill="#212529" rx="10" />
+  <text x="40" y="80" font-family="monospace" font-size="24" fill="#0d6efd">&lt;coder&gt;</text>
+  <rect x="40" y="120" width="300" height="20" fill="#495057" rx="5" />
+  <rect x="40" y="160" width="250" height="20" fill="#495057" rx="5" />
+  <rect x="40" y="200" width="350" height="20" fill="#495057" rx="5" />
+  
+  <rect x="40" y="280" width="200" height="150" fill="#343a40" rx="5" stroke="#0dcaf0" stroke-width="2" />
+  <circle cx="350" cy="350" r="80" stroke="#6610f2" stroke-width="2" fill="none" />
+  
+  <text x="40" y="550" font-family="monospace" font-size="24" fill="#0d6efd">&lt;/coder&gt;</text>
+</svg>

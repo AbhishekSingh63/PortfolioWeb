@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Abhihishek Kumar Singh - Professional Developer Portfolio | Computer Science Engineer | Full Stack Developer">
+    <meta name="keywords"
+        content="Portfolio, Abhishek Kumar Singh, Software Engineer, Web Developer, Full Stack, React, Python, Data Analytics">
+    <meta property="og:title" content="Abhishek Kumar Singh - Portfolio">
+    <meta property="og:description"
+        content="Showcasing skills, projects, and experience in software development and data analytics.">
+    <meta property="og:type" content="website">
+    <title>Abhishek Kumar Singh | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-logo">&lt;Dev/&gt;</span> Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-sm btn-outline-theme"
+                            aria-label="Toggle Dark/Light Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1 order-2 fade-in-up">
+                    <span class="hero-subtitle">Hello, I'm</span>
+                    <h1 class="hero-title">Abhishek <span class="text-gradient">Kumar Singh</span></h1>
+                    <h2 class="hero-role">Computer Science Engineer | Full Stack Developer</h2>
+                    <p class="hero-desc">Passionate about solving complex problems through elegant code. Specializing in
+                        Web Development, React, and Data Analytics.</p>
+                    <div class="hero-btns mt-4">
+                        <a href="#contact" class="btn btn-primary btn-lg me-3">Contact Me</a>
+                        <a href="#" class="btn btn-outline-secondary btn-lg">Download Resume <i
+                                class="fas fa-download ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 text-center mb-5 mb-lg-0 fade-in-up"
+                    style="animation-delay: 0.2s;">
+                    <div class="hero-img-wrapper">
+                        <img src="assets/images/profile.svg" alt="Alex Developer" class="img-fluid hero-img">
+                        <div class="hero-shape"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-in-up">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0 fade-in-left">
+                    <div class="about-img-container">
+                        <img src="assets/images/about.svg" alt="Working" class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-lg-5 fade-in-right">
+                    <h3 class="mb-3">Passionate about creating digital experiences and data insights.</h3>
+                    <p class="mb-4">I am a dedicated Computer Science student at Lovely Professional University (B.Tech
+                        - CGPA: 7.56) with a strong foundation in Full Stack Development and Data Analytics. My journey
+                        involves building high-performance applications, interactive dashboards, and solving real-world
+                        coding challenges.</p>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled about-list">
+                                <li><i class="fas fa-check-circle text-accent me-2"></i> Problem-Solving & DSA</li>
+                                <li><i class="fas fa-check-circle text-accent me-2"></i> Quick Learner & Adaptable</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled about-list">
+                                <li><i class="fas fa-check-circle text-accent me-2"></i> Teamwork & Collaboration</li>
+                                <li><i class="fas fa-check-circle text-accent me-2"></i> Time Management</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row text-center mt-5 counters">
+                        <div class="col-4">
+                            <h2 class="counter-value" data-target="2">0</h2>
+                            <p class="counter-label">Major Projects</p>
+                        </div>
+                        <div class="col-4">
+                            <h2 class="counter-value" data-target="2">0</h2>
+                            <p class="counter-label">Hackathons</p>
+                        </div>
+                        <div class="col-4">
+                            <h2>B.Tech</h2>
+                            <p class="counter-label">Education</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-in-up">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row g-4">
+                <!-- Languages & Web -->
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h4>Languages & Web</h4>
+                        <div class="skill-bar-wrapper">
+                            <div class="d-flex justify-content-between"><span>C / C++</span><span>90%</span></div>
+                            <div class="progress" role="progressbar" aria-label="C++" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="d-flex justify-content-between"><span>JavaScript /
+                                    React.js</span><span>85%</span></div>
+                            <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="d-flex justify-content-between"><span>HTML/CSS & Tailwind</span><span>85%</span>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="HTML/CSS" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Data Analytics & ML -->
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>Data Analytics & ML</h4>
+                        <div class="skill-bar-wrapper">
+                            <div class="d-flex justify-content-between"><span>Python (NumPy,
+                                    Pandas)</span><span>80%</span></div>
+                            <div class="progress" role="progressbar" aria-label="Python" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="d-flex justify-content-between"><span>Power BI & Excel</span><span>85%</span>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Power BI" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="d-flex justify-content-between"><span>Machine Learning
+                                    (Scikit)</span><span>75%</span></div>
+                            <div class="progress" role="progressbar" aria-label="Machine Learning" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools & Platforms -->
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <h4>Tools & Platforms</h4>
+                        <div class="skill-bar-wrapper">
+                            <div class="d-flex justify-content-between"><span>Git & GitHub</span><span>90%</span></div>
+                            <div class="progress" role="progressbar" aria-label="Git" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="d-flex justify-content-between"><span>VS Code & Replit</span><span>95%</span>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="VS Code" aria-valuenow="95"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="d-flex justify-content-between"><span>Jupyter Notebook</span><span>85%</span>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Jupyter Notebook" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-in-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/images/project1.svg" alt="Car Sales Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm btn-light" title="View Source"><i
+                                            class="fab fa-github"></i></a>
+                                    <a href="#" class="btn btn-sm btn-primary" title="Live Demo"><i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="project-title">Car Sales Analysis Dashboard</h5>
+                            <p class="project-desc">Interactive dashboard analyzing car sales performance, revenue, and
+                                time trends.</p>
+                            <div class="project-tags">
+                                <span class="badge">Power BI</span>
+                                <span class="badge">DAX</span>
+                                <span class="badge">Data Modeling</span>
+                            </div>
+                            <button class="btn btn-link link-arrow" data-bs-toggle="modal"
+                                data-bs-target="#projectModal1">View Details <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/images/project2.svg" alt="iOS Calculator">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm btn-light" title="View Source"><i
+                                            class="fab fa-github"></i></a>
+                                    <a href="#" class="btn btn-sm btn-primary" title="Live Demo"><i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="project-title">iOS-Scientific Confetti Calculator</h5>
+                            <p class="project-desc">High-accuracy scientific calculator (30+ functions) with iOS UI and
+                                animations.</p>
+                            <div class="project-tags">
+                                <span class="badge">React.js</span>
+                                <span class="badge">CSS</span>
+                                <span class="badge">JavaScript</span>
+                            </div>
+                            <button class="btn btn-link link-arrow" data-bs-toggle="modal"
+                                data-bs-target="#projectModal2">View Details <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/images/project3.svg" alt="HackWithVertos">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm btn-light" title="View Source"><i
+                                            class="fab fa-github"></i></a>
+                                    <a href="#" class="btn btn-sm btn-primary" title="Live Demo"><i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="project-title">HackWithVertos Finalist</h5>
+                            <p class="project-desc">Selected for the final round of the 24-hour HackWithVertos 1.0
+                                hackathon.</p>
+                            <div class="project-tags">
+                                <span class="badge">Problem Solving</span>
+                                <span class="badge">Teamwork</span>
+                            </div>
+                            <button class="btn btn-link link-arrow" data-bs-toggle="modal"
+                                data-bs-target="#projectModal3">View Details <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-in-up">
+                <h2 class="section-title">Education & Training</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left fade-in-up">
+                    <div class="timeline-content">
+                        <h3>B.Tech - Computer Science</h3>
+                        <span class="timeline-date">Aug 2023 - Present</span>
+                        <h4 class="timeline-company">Lovely Professional University (LPU)</h4>
+                        <p>Pursuing engineering degree with a current CGPA of 7.56. Focusing on full-stack development,
+                            data structures, and machine learning.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="timeline-content">
+                        <h3>Data Structures & Algorithms</h3>
+                        <span class="timeline-date">June 2025 - July 2025</span>
+                        <h4 class="timeline-company">CipherSchools</h4>
+                        <p>Intensive DSA training program in C++. Practiced core implementations and solved real-world
+                            coding problems to build strong interview foundations.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="timeline-content">
+                        <h3>Intermediate (Class 12th)</h3>
+                        <span class="timeline-date">April 2022 - March 2023</span>
+                        <h4 class="timeline-company">St. Dominic Savio College, UP</h4>
+                        <p>Completed higher secondary education with 72.7%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="timeline-content">
+                        <h3>Matriculation (Class 10th)</h3>
+                        <span class="timeline-date">April 2020 - March 2021</span>
+                        <h4 class="timeline-company">St. Dominic Savio College, UP</h4>
+                        <p>Completed secondary education with 89.8%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Achievements -->
+    <section id="achievements" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-in-up">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6 fade-in-up">
+                    <div class="skill-card">
+                        <div class="skill-icon mb-3"><i class="fas fa-certificate"></i></div>
+                        <h4 class="mb-4">Certifications</h4>
+                        <ul class="list-unstyled about-list">
+                            <li class="mb-3"><i class="fas fa-award text-accent me-2"></i> <strong>Privacy and Security
+                                    in OSN:</strong> IIIT Hyderabad & NPTEL (Nov 2025)</li>
+                            <li class="mb-3"><i class="fas fa-award text-accent me-2"></i> <strong>Gen AI Apps with
+                                    No-Code:</strong> Udemy (Aug 2025)</li>
+                            <li class="mb-3"><i class="fas fa-award text-accent me-2"></i> <strong>Master Generative
+                                    AI:</strong> Udemy (Jul 2025)</li>
+                            <li class="mb-3"><i class="fas fa-award text-accent me-2"></i> <strong>Python towards
+                                    ML/AI:</strong> CSE Pathshala (Mar 2024)</li>
+                            <li class="mb-3"><i class="fas fa-award text-accent me-2"></i> <strong>Legacy Responsive Web
+                                    Design:</strong> freeCodeCamp (Nov 2023)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="skill-card">
+                        <div class="skill-icon mb-3"><i class="fas fa-trophy"></i></div>
+                        <h4 class="mb-4">Key Achievements</h4>
+                        <ul class="list-unstyled about-list">
+                            <li class="mb-4"><i class="fas fa-medal text-accent me-2"></i> <strong>Coding Platforms
+                                    Badges (Dec 2025):</strong> <br>Earned various skill-based badges including the
+                                "April Leetcode challenge" and the "50 days badge".</li>
+                            <li class="mb-4"><i class="fas fa-medal text-accent me-2"></i> <strong>HackWithVertos 1.0
+                                    Finalist (Mar 2024):</strong> <br>Selected for the final round of the prestigious
+                                24-hour hackathon, demonstrating rapid problem-solving and teamwork.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-in-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 fade-in-up text-center mb-4">
+                    <p class="lead">Interested in working together or have a question?</p>
+                    <p><strong>Email:</strong> 9981abhisheksingh@gmail.com | <strong>Mobile:</strong> +91-6386090103</p>
+                </div>
+                <div class="col-lg-8 fade-in-up">
+                    <div class="contact-card shadow-lg p-5 rounded-4">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name"
+                                            required>
+                                        <label for="name">Your Name</label>
+                                        <div class="invalid-feedback">Please enter your name.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="name@example.com" required>
+                                        <label for="email">Email address</label>
+                                        <div class="invalid-feedback">Please enter a valid email.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                            required>
+                                        <label for="subject">Subject</label>
+                                        <div class="invalid-feedback">Please enter a subject.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="message"
+                                            style="height: 150px" required></textarea>
+                                        <label for="message">Message</label>
+                                        <div class="invalid-feedback">Please enter your message.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
+                                </div>
+                                <div class="col-12 mt-3 text-center">
+                                    <div id="formSuccess" class="alert alert-success d-none" role="alert">
+                                        Message sent successfully! I'll get back to you soon.
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 text-center">
+        <div class="container">
+            <div class="footer-logo mb-3">
+                <span class="brand-logo">&lt;Dev/&gt;</span>
+            </div>
+            <div class="social-icons mb-4">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:9981abhisheksingh@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-muted mb-0">© 2026 Abhishek Kumar Singh. All rights reserved.</p>
+            <p class="text-muted small">Built with HTML5, Bootstrap 5 & Vanilla JS</p>
+        </div>
+        <button id="backToTop" class="btn btn-primary" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Car Sales Analysis Dashboard</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/project1.svg" class="img-fluid rounded mb-4" alt="Dashboard">
+                    <p>Developed an interactive Power BI dashboard to analyze car sales performance, revenue, and time
+                        trends. Built KPIs, top brand/model visuals, and monthly/yearly trend analysis to provide
+                        actionable business insights.</p>
+                    <ul>
+                        <li><strong>Tech Stack:</strong> Power BI, DAX, Data Modeling, Data Visualization</li>
+                        <li><strong>Highlights:</strong> Enabled drill-down analysis using interactive slicers,
+                            improving decision-making and reporting efficiency.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-outline-light" data-bs-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">iOS-Scientific Confetti Calculator</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/project2.svg" class="img-fluid rounded mb-4" alt="Calculator">
+                    <p>Built a high-accuracy scientific calculator featuring over 30 functions with 99.9% accuracy.
+                        Designed with a modern iOS-inspired UI to improve usability and reduce input errors.</p>
+                    <ul>
+                        <li><strong>Tech Stack:</strong> React.js, JavaScript, CSS, HTML</li>
+                        <li><strong>Performance:</strong> Optimized UX to execute computations in &lt;100ms. Delivered a
+                            fully responsive solution with a 98/100 Google Lighthouse score and interactive confetti
+                            animations.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-outline-light" data-bs-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-primary"><i class="fab fa-github me-2"></i>View Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
