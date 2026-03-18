@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Abhihishek Kumar Singh - Professional Developer Portfolio | Computer Science Engineer | Full Stack Developer">
-    <meta name="keywords"
-        content="Portfolio, Abhishek Kumar Singh, Software Engineer, Web Developer, Full Stack, React, Python, Data Analytics">
-    <meta property="og:title" content="Abhishek Kumar Singh - Portfolio">
-    <meta property="og:description"
-        content="Showcasing skills, projects, and experience in software development and data analytics.">
-    <meta property="og:type" content="website">
+    <meta name="description" content="Abhishek Kumar Singh - Professional Developer Portfolio">
     <title>Abhishek Kumar Singh | Portfolio</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Bootstrap 5 CSS -->
@@ -35,8 +28,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <span class="brand-logo">&lt;Dev/&gt;</span> Portfolio
+            <a class="navbar-brand" href="#hero">
+                <span class="brand-logo">&lt;Portfolio /&gt;</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,11 +41,13 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#training">Training</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <button id="theme-toggle" class="btn btn-sm btn-outline-theme"
-                            aria-label="Toggle Dark/Light Mode">
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode"
+                            title="Toggle Theme">
                             <i class="fas fa-moon"></i>
                         </button>
                     </li>
@@ -61,80 +56,88 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- 1. Hero Section -->
     <section id="hero" class="d-flex align-items-center min-vh-100">
-        <div class="container">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container position-relative z-1">
             <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1 order-2 fade-in-up">
+                <div class="col-lg-7 order-lg-1 order-2 fade-in-up">
                     <span class="hero-subtitle">Hello, I'm</span>
                     <h1 class="hero-title">Abhishek <span class="text-gradient">Kumar Singh</span></h1>
-                    <h2 class="hero-role">Computer Science Engineer | Full Stack Developer</h2>
-                    <p class="hero-desc">Passionate about solving complex problems through elegant code. Specializing in
-                        Web Development, React, and Data Analytics.</p>
-                    <div class="hero-btns mt-4">
-                        <a href="#contact" class="btn btn-primary btn-lg me-3">Contact Me</a>
-                        <a href="#" class="btn btn-outline-secondary btn-lg">Download Resume <i
-                                class="fas fa-download ms-2"></i></a>
+                    <h2 class="hero-role">Data Scientist & Developer</h2>
+                    <p class="hero-desc">Building practical, data-driven solutions and responsive web applications.
+                        Quick learner passionate about coding, algorithms, and continuous growth.</p>
+
+                    <div class="hero-socials mt-3 mb-4">
+                        <a href="https://github.com/AbhishekSingh63" target="_blank" class="social-link"
+                            title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/abhisheksingh63/" target="_blank" class="social-link"
+                            title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:9981abhisheksingh@gmail.com" class="social-link" title="Email"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+
+                    <div class="hero-btns mt-4 d-flex flex-wrap gap-3 align-items-center">
+                        <a href="#projects" class="btn btn-primary btn-lg shadow-sm">View Projects</a>
+                        <a href="assets/Abhishek_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-lg shadow-sm" download>
+                            Download CV <i class="fas fa-cloud-download-alt ms-2"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-link link-secondary fw-semibold text-decoration-none px-0 ms-2">
+                            Let's Talk <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-2 order-1 text-center mb-5 mb-lg-0 fade-in-up"
-                    style="animation-delay: 0.2s;">
+                <div class="col-lg-5 order-lg-2 order-1 text-center mb-5 mb-lg-0 fade-in-up hero-image-col">
                     <div class="hero-img-wrapper">
-                        <img src="assets/images/profile.svg" alt="Alex Developer" class="img-fluid hero-img">
-                        <div class="hero-shape"></div>
+                        <img src="assets/images/profilepic.jpg" alt="Abhishek Kumar Singh" class="hero-img">
+                        <div class="floating-badge badge-1"><i class="fas fa-code"></i> Developer</div>
+                        <div class="floating-badge badge-2"><i class="fas fa-chart-bar"></i> Analyst</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section-padding">
+    <!-- 2. About Me Section -->
+    <section id="about" class="section-padding bg-alt">
         <div class="container">
-            <div class="section-header text-center mb-5 fade-in-up">
+            <div class="section-header fade-in-up text-center">
+                <span class="section-subtitle">Introduction</span>
                 <h2 class="section-title">About Me</h2>
-                <div class="section-line"></div>
+                <div class="section-line mx-auto"></div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0 fade-in-left">
-                    <div class="about-img-container">
-                        <img src="assets/images/about.svg" alt="Working" class="img-fluid rounded-3 shadow-lg">
-                    </div>
-                </div>
-                <div class="col-lg-7 ps-lg-5 fade-in-right">
-                    <h3 class="mb-3">Passionate about creating digital experiences and data insights.</h3>
-                    <p class="mb-4">I am a dedicated Computer Science student at Lovely Professional University (B.Tech
-                        - CGPA: 7.56) with a strong foundation in Full Stack Development and Data Analytics. My journey
-                        involves building high-performance applications, interactive dashboards, and solving real-world
-                        coding challenges.</p>
 
-                    <div class="row mb-4">
-                        <div class="col-md-6">
-                            <ul class="list-unstyled about-list">
-                                <li><i class="fas fa-check-circle text-accent me-2"></i> Problem-Solving & DSA</li>
-                                <li><i class="fas fa-check-circle text-accent me-2"></i> Quick Learner & Adaptable</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="list-unstyled about-list">
-                                <li><i class="fas fa-check-circle text-accent me-2"></i> Teamwork & Collaboration</li>
-                                <li><i class="fas fa-check-circle text-accent me-2"></i> Time Management</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-10 mx-auto text-center fade-in-up">
+                    <h3 class="about-heading mb-4">A dedicated student blending software engineering with data
+                        analytics.</h3>
 
-                    <div class="row text-center mt-5 counters">
-                        <div class="col-4">
-                            <h2 class="counter-value" data-target="2">0</h2>
-                            <p class="counter-label">Major Projects</p>
+                    <p class="about-text mx-auto" style="max-width: 800px;">
+                        I am a passionate B.Tech student in Computer Science and Engineering at Lovely Professional
+                        University. I specialize in web development and data analytics. My focus is on building
+                        practical, data-driven solutions and responsive web applications. I pride myself on being a
+                        quick learner with strong problem-solving skills, always ready to adapt to new technologies and
+                        collaborate effectively in team environments.
+                    </p>
+
+                    <div class="about-stats d-flex justify-content-center gap-4 mt-5 flex-wrap">
+                        <div class="stat-item">
+                            <h4 class="stat-number">200+</h4>
+                            <p class="stat-label">Problems Solved</p>
                         </div>
-                        <div class="col-4">
-                            <h2 class="counter-value" data-target="2">0</h2>
-                            <p class="counter-label">Hackathons</p>
+                        <div class="divider d-none d-md-block"></div>
+                        <div class="stat-item">
+                            <h4 class="stat-number">7.56</h4>
+                            <p class="stat-label">CGPA</p>
                         </div>
-                        <div class="col-4">
-                            <h2>B.Tech</h2>
-                            <p class="counter-label">Education</p>
+                        <div class="divider d-none d-md-block"></div>
+                        <div class="stat-item">
+                            <h4 class="stat-number">6+</h4>
+                            <p class="stat-label">Certifications</p>
                         </div>
                     </div>
                 </div>
@@ -142,102 +145,87 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section-padding bg-alt">
+    <!-- 3. Skills Section -->
+    <section id="skills" class="section-padding">
         <div class="container">
-            <div class="section-header text-center mb-5 fade-in-up">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="section-line"></div>
+            <div class="section-header text-center fade-in-up">
+                <span class="section-subtitle">Proficiency</span>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-line mx-auto"></div>
             </div>
-            <div class="row g-4">
-                <!-- Languages & Web -->
+
+            <div class="row justify-content-center g-4 mt-3">
+                <!-- Programming Languages -->
                 <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-code"></i></div>
-                        <h4>Languages & Web</h4>
-                        <div class="skill-bar-wrapper">
-                            <div class="d-flex justify-content-between"><span>C / C++</span><span>90%</span></div>
-                            <div class="progress" role="progressbar" aria-label="C++" aria-valuenow="90"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar-wrapper">
-                            <div class="d-flex justify-content-between"><span>JavaScript /
-                                    React.js</span><span>85%</span></div>
-                            <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar-wrapper">
-                            <div class="d-flex justify-content-between"><span>HTML/CSS & Tailwind</span><span>85%</span>
-                            </div>
-                            <div class="progress" role="progressbar" aria-label="HTML/CSS" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
+                    <div class="skill-category-card">
+                        <div class="skill-category-icon"><i class="fas fa-code"></i></div>
+                        <h4>Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-badge">C</span>
+                            <span class="skill-badge">C++</span>
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">SQL</span>
                         </div>
                     </div>
                 </div>
-                <!-- Data Analytics & ML -->
+
+                <!-- Frameworks -->
                 <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-                        <h4>Data Analytics & ML</h4>
-                        <div class="skill-bar-wrapper">
-                            <div class="d-flex justify-content-between"><span>Python (NumPy,
-                                    Pandas)</span><span>80%</span></div>
-                            <div class="progress" role="progressbar" aria-label="Python" aria-valuenow="80"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar-wrapper">
-                            <div class="d-flex justify-content-between"><span>Power BI & Excel</span><span>85%</span>
-                            </div>
-                            <div class="progress" role="progressbar" aria-label="Power BI" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar-wrapper">
-                            <div class="d-flex justify-content-between"><span>Machine Learning
-                                    (Scikit)</span><span>75%</span></div>
-                            <div class="progress" role="progressbar" aria-label="Machine Learning" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
+                    <div class="skill-category-card">
+                        <div class="skill-category-icon"><i class="fab fa-react"></i></div>
+                        <h4>Frameworks</h4>
+                        <div class="skill-tags">
+                            <span class="skill-badge">Bootstrap</span>
+                            <span class="skill-badge">React.js</span>
+                            <span class="skill-badge">Tailwind CSS</span>
                         </div>
                     </div>
                 </div>
-                <!-- Tools & Platforms -->
+
+                <!-- Data Analytics -->
                 <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <div class="skill-category-card">
+                        <div class="skill-category-icon"><i class="fas fa-chart-pie"></i></div>
+                        <h4>Data Analytics</h4>
+                        <div class="skill-tags">
+                            <span class="skill-badge">Jupyter Notebook</span>
+                            <span class="skill-badge">Power BI</span>
+                            <span class="skill-badge">MS Excel</span>
+                            <span class="skill-badge">NumPy</span>
+                            <span class="skill-badge">Pandas</span>
+                            <span class="skill-badge">Seaborn</span>
+                            <span class="skill-badge">Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools/Platforms -->
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="skill-category-card">
+                        <div class="skill-category-icon"><i class="fas fa-tools"></i></div>
                         <h4>Tools & Platforms</h4>
-                        <div class="skill-bar-wrapper">
-                            <div class="d-flex justify-content-between"><span>Git & GitHub</span><span>90%</span></div>
-                            <div class="progress" role="progressbar" aria-label="Git" aria-valuenow="90"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 90%"></div>
-                            </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">GitHub</span>
+                            <span class="skill-badge">VS Code</span>
+                            <span class="skill-badge">Replit</span>
                         </div>
-                        <div class="skill-bar-wrapper">
-                            <div class="d-flex justify-content-between"><span>VS Code & Replit</span><span>95%</span>
-                            </div>
-                            <div class="progress" role="progressbar" aria-label="VS Code" aria-valuenow="95"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar-wrapper">
-                            <div class="d-flex justify-content-between"><span>Jupyter Notebook</span><span>85%</span>
-                            </div>
-                            <div class="progress" role="progressbar" aria-label="Jupyter Notebook" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="skill-category-card">
+                        <div class="skill-category-icon"><i class="fas fa-users"></i></div>
+                        <h4>Soft Skills</h4>
+                        <div class="skill-tags">
+                            <span class="skill-badge">Problem-Solving</span>
+                            <span class="skill-badge">Teamwork</span>
+                            <span class="skill-badge">Time Management</span>
+                            <span class="skill-badge">Adaptability</span>
+                            <span class="skill-badge">Quick Learner</span>
                         </div>
                     </div>
                 </div>
@@ -245,247 +233,392 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section-padding">
+    <!-- 4. Projects Section -->
+    <section id="projects" class="section-padding bg-alt">
         <div class="container">
-            <div class="section-header text-center mb-5 fade-in-up">
+            <div class="section-header text-center fade-in-up">
+                <span class="section-subtitle">Portfolio</span>
                 <h2 class="section-title">Featured Projects</h2>
-                <div class="section-line"></div>
+                <div class="section-line mx-auto"></div>
             </div>
-            <div class="row g-4">
+
+            <div class="row g-4 mt-4 justify-content-center">
                 <!-- Project 1 -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="assets/images/project1.svg" alt="Car Sales Dashboard">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="btn btn-sm btn-light" title="View Source"><i
-                                            class="fab fa-github"></i></a>
-                                    <a href="#" class="btn btn-sm btn-primary" title="Live Demo"><i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h5 class="project-title">Car Sales Analysis Dashboard</h5>
-                            <p class="project-desc">Interactive dashboard analyzing car sales performance, revenue, and
-                                time trends.</p>
-                            <div class="project-tags">
-                                <span class="badge">Power BI</span>
-                                <span class="badge">DAX</span>
-                                <span class="badge">Data Modeling</span>
-                            </div>
-                            <button class="btn btn-link link-arrow" data-bs-toggle="modal"
-                                data-bs-target="#projectModal1">View Details <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="assets/images/project2.svg" alt="iOS Calculator">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="btn btn-sm btn-light" title="View Source"><i
-                                            class="fab fa-github"></i></a>
-                                    <a href="#" class="btn btn-sm btn-primary" title="Live Demo"><i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h5 class="project-title">iOS-Scientific Confetti Calculator</h5>
-                            <p class="project-desc">High-accuracy scientific calculator (30+ functions) with iOS UI and
-                                animations.</p>
-                            <div class="project-tags">
-                                <span class="badge">React.js</span>
-                                <span class="badge">CSS</span>
-                                <span class="badge">JavaScript</span>
-                            </div>
-                            <button class="btn btn-link link-arrow" data-bs-toggle="modal"
-                                data-bs-target="#projectModal2">View Details <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="assets/images/project3.svg" alt="HackWithVertos">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="btn btn-sm btn-light" title="View Source"><i
-                                            class="fab fa-github"></i></a>
-                                    <a href="#" class="btn btn-sm btn-primary" title="Live Demo"><i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h5 class="project-title">HackWithVertos Finalist</h5>
-                            <p class="project-desc">Selected for the final round of the 24-hour HackWithVertos 1.0
-                                hackathon.</p>
-                            <div class="project-tags">
-                                <span class="badge">Problem Solving</span>
-                                <span class="badge">Teamwork</span>
-                            </div>
-                            <button class="btn btn-link link-arrow" data-bs-toggle="modal"
-                                data-bs-target="#projectModal3">View Details <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience & Education Section -->
-    <section id="experience" class="section-padding bg-alt">
-        <div class="container">
-            <div class="section-header text-center mb-5 fade-in-up">
-                <h2 class="section-title">Education & Training</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item left fade-in-up">
-                    <div class="timeline-content">
-                        <h3>B.Tech - Computer Science</h3>
-                        <span class="timeline-date">Aug 2023 - Present</span>
-                        <h4 class="timeline-company">Lovely Professional University (LPU)</h4>
-                        <p>Pursuing engineering degree with a current CGPA of 7.56. Focusing on full-stack development,
-                            data structures, and machine learning.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="timeline-content">
-                        <h3>Data Structures & Algorithms</h3>
-                        <span class="timeline-date">June 2025 - July 2025</span>
-                        <h4 class="timeline-company">CipherSchools</h4>
-                        <p>Intensive DSA training program in C++. Practiced core implementations and solved real-world
-                            coding problems to build strong interview foundations.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="timeline-content">
-                        <h3>Intermediate (Class 12th)</h3>
-                        <span class="timeline-date">April 2022 - March 2023</span>
-                        <h4 class="timeline-company">St. Dominic Savio College, UP</h4>
-                        <p>Completed higher secondary education with 72.7%.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="timeline-content">
-                        <h3>Matriculation (Class 10th)</h3>
-                        <span class="timeline-date">April 2020 - March 2021</span>
-                        <h4 class="timeline-company">St. Dominic Savio College, UP</h4>
-                        <p>Completed secondary education with 89.8%.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications & Achievements -->
-    <section id="achievements" class="section-padding">
-        <div class="container">
-            <div class="section-header text-center mb-5 fade-in-up">
-                <h2 class="section-title">Certifications & Achievements</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="row g-4 justify-content-center">
                 <div class="col-lg-6 fade-in-up">
-                    <div class="skill-card">
-                        <div class="skill-icon mb-3"><i class="fas fa-certificate"></i></div>
-                        <h4 class="mb-4">Certifications</h4>
-                        <ul class="list-unstyled about-list">
-                            <li class="mb-3"><i class="fas fa-award text-accent me-2"></i> <strong>Privacy and Security
-                                    in OSN:</strong> IIIT Hyderabad & NPTEL (Nov 2025)</li>
-                            <li class="mb-3"><i class="fas fa-award text-accent me-2"></i> <strong>Gen AI Apps with
-                                    No-Code:</strong> Udemy (Aug 2025)</li>
-                            <li class="mb-3"><i class="fas fa-award text-accent me-2"></i> <strong>Master Generative
-                                    AI:</strong> Udemy (Jul 2025)</li>
-                            <li class="mb-3"><i class="fas fa-award text-accent me-2"></i> <strong>Python towards
-                                    ML/AI:</strong> CSE Pathshala (Mar 2024)</li>
-                            <li class="mb-3"><i class="fas fa-award text-accent me-2"></i> <strong>Legacy Responsive Web
-                                    Design:</strong> freeCodeCamp (Nov 2023)</li>
+                    <div class="premium-card h-100 d-flex flex-column p-4 p-md-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="project-date badge bg-primary text-white py-2 px-3">November 2025</span>
+                            <a href="https://github.com/AbhishekSingh63" target="_blank" class="text-body fs-4"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <h3 class="project-title mb-4">Online Shoppers Purchasing Intention Prediction</h3>
+                        <ul class="text-muted mb-4 ps-3 flex-grow-1" style="line-height: 1.8;">
+                            <li>Developed a predictive machine learning pipeline to forecast customer purchase intent
+                                using behavioral ecommerce session data.</li>
+                            <li>Conducted exploratory data analysis, feature engineering, and model benchmarking across
+                                Logistic Regression, Random Forest, and KNN classifiers.</li>
+                            <li>Implemented dimensionality reduction using Principal Component Analysis and deployed an
+                                interactive Streamlit dashboard for real-time inference.</li>
                         </ul>
+                        <div class="project-tech pt-3 border-top">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">Pandas</span>
+                            <span class="skill-badge">NumPy</span>
+                            <span class="skill-badge">Scikit-Learn</span>
+                            <span class="skill-badge">Matplotlib</span>
+                            <span class="skill-badge">Streamlit</span>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Project 2 -->
                 <div class="col-lg-6 fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="skill-card">
-                        <div class="skill-icon mb-3"><i class="fas fa-trophy"></i></div>
-                        <h4 class="mb-4">Key Achievements</h4>
-                        <ul class="list-unstyled about-list">
-                            <li class="mb-4"><i class="fas fa-medal text-accent me-2"></i> <strong>Coding Platforms
-                                    Badges (Dec 2025):</strong> <br>Earned various skill-based badges including the
-                                "April Leetcode challenge" and the "50 days badge".</li>
-                            <li class="mb-4"><i class="fas fa-medal text-accent me-2"></i> <strong>HackWithVertos 1.0
-                                    Finalist (Mar 2024):</strong> <br>Selected for the final round of the prestigious
-                                24-hour hackathon, demonstrating rapid problem-solving and teamwork.</li>
+                    <div class="premium-card h-100 d-flex flex-column p-4 p-md-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="project-date badge bg-primary text-white py-2 px-3">July 2025</span>
+                            <a href="https://github.com/AbhishekSingh63" target="_blank" class="text-body fs-4"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <h3 class="project-title mb-4">iOS Scientific Confetti Calculator</h3>
+                        <ul class="text-muted mb-4 ps-3 flex-grow-1" style="line-height: 1.8;">
+                            <li>Engineered a high-precision scientific calculator supporting 30+ mathematical functions
+                                with an intuitive iOS-inspired interface.</li>
+                            <li>Enhanced computational efficiency to process complex operations under 100ms, improving
+                                interaction speed and usability.</li>
+                            <li>Designed responsive UI components with interactive visual feedback, achieving a 98/100
+                                Google Lighthouse performance score.</li>
                         </ul>
+                        <div class="project-tech pt-3 border-top">
+                            <span class="skill-badge">React.js</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">HTML</span>
+                            <span class="skill-badge">CSS</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-alt">
+    <!-- 5. Training Section -->
+    <section id="training" class="section-padding">
         <div class="container">
-            <div class="section-header text-center mb-5 fade-in-up">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="section-line"></div>
+            <div class="section-header text-center fade-in-up">
+                <span class="section-subtitle">Upskilling</span>
+                <h2 class="section-title">Training</h2>
+                <div class="section-line mx-auto"></div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8 fade-in-up text-center mb-4">
-                    <p class="lead">Interested in working together or have a question?</p>
-                    <p><strong>Email:</strong> 9981abhisheksingh@gmail.com | <strong>Mobile:</strong> +91-6386090103</p>
-                </div>
+
+            <div class="row mt-5 justify-content-center">
                 <div class="col-lg-8 fade-in-up">
-                    <div class="contact-card shadow-lg p-5 rounded-4">
-                        <form id="contactForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name"
-                                            required>
-                                        <label for="name">Your Name</label>
-                                        <div class="invalid-feedback">Please enter your name.</div>
-                                    </div>
+                    <div
+                        class="training-card card-premium p-4 p-md-5 rounded-4 shadow-sm border position-relative overflow-hidden">
+                        <div class="position-absolute top-0 end-0 p-4 opacity-10"
+                            style="font-size: 8rem; color: var(--primary-color); z-index: 0; transform: translate(20%, -20%);">
+                            <i class="fas fa-medal"></i>
+                        </div>
+
+                        <div class="position-relative z-1">
+                            <div
+                                class="d-flex justify-content-between align-items-md-center flex-column flex-md-row mb-4">
+                                <div>
+                                    <h5 class="text-accent fw-bold mb-1">CipherSchools</h5>
+                                    <h3 class="fw-bold mb-0">Data Structures & Algorithms (C++)</h3>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email"
-                                            placeholder="name@example.com" required>
-                                        <label for="email">Email address</label>
-                                        <div class="invalid-feedback">Please enter a valid email.</div>
-                                    </div>
+                                <span
+                                    class="badge bg-primary fs-6 py-2 px-3 mt-3 mt-md-0 align-self-start align-self-md-center">June
+                                    2025</span>
+                            </div>
+
+                            <ul class="text-muted mb-0 ps-3" style="line-height: 1.8; font-size: 1.05rem;">
+                                <li>Completed intensive training covering core algorithmic concepts including arrays,
+                                    linked lists, trees, graphs, and dynamic programming.</li>
+                                <li>Implemented optimized solutions to practical coding challenges to strengthen
+                                    problem-solving and computational thinking.</li>
+                                <li>Improved coding efficiency and interview readiness through consistent hands-on
+                                    practice.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Certificates and Achievements Timeline -->
+    <section id="achievements" class="section-padding bg-alt">
+        <div class="container border-top-glow">
+            <div class="section-header text-center fade-in-up">
+                <span class="section-subtitle">Milestones</span>
+                <h2 class="section-title">Certificates & Achievements</h2>
+                <div class="section-line mx-auto"></div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="timeline-modern">
+
+                        <!-- March 2026 -->
+                        <div class="timeline-row fade-in-up">
+                            <div class="timeline-time">
+                                <span class="badge bg-primary">March 2026</span>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-trophy text-warning me-2 fs-5"></i>
+                                    <h4 class="mb-0">Achievement</h4>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject"
-                                            required>
-                                        <label for="subject">Subject</label>
-                                        <div class="invalid-feedback">Please enter a subject.</div>
-                                    </div>
+                                <p class="mb-0 text-muted">Solved 200+ algorithmic problems across LeetCode,
+                                    GeeksforGeeks, and Codeforces.</p>
+                            </div>
+                        </div>
+
+                        <!-- November 2025 -->
+                        <div class="timeline-row fade-in-up timeline-inverted text-lg-end">
+                            <div class="timeline-time">
+                                <span class="badge bg-primary">November 2025</span>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="d-flex align-items-center justify-content-lg-end mb-2">
+                                    <i class="fas fa-certificate text-info me-2 fs-5"></i>
+                                    <h4 class="mb-0">Certificate</h4>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="message"
-                                            style="height: 150px" required></textarea>
-                                        <label for="message">Message</label>
-                                        <div class="invalid-feedback">Please enter your message.</div>
-                                    </div>
+                                <h5 class="text-accent mb-2">NPTEL</h5>
+                                <p class="mb-0 text-muted">Privacy and Security in Online Social Media - IIIT Hyderabad
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- August 2025 -->
+                        <div class="timeline-row fade-in-up">
+                            <div class="timeline-time">
+                                <span class="badge bg-primary">August 2025</span>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-certificate text-info me-2 fs-5"></i>
+                                    <h4 class="mb-0">Certificate</h4>
                                 </div>
-                                <div class="col-12 text-center mt-4">
-                                    <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
+                                <h5 class="text-accent mb-2">Udemy</h5>
+                                <p class="mb-0 text-muted">Build Generative AI Apps and Solutions with No-Code Tools</p>
+                            </div>
+                        </div>
+
+                        <!-- July 2025 -->
+                        <div class="timeline-row fade-in-up timeline-inverted text-lg-end">
+                            <div class="timeline-time">
+                                <span class="badge bg-primary">July 2025</span>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="d-flex align-items-center justify-content-lg-end mb-2">
+                                    <i class="fas fa-certificate text-info me-2 fs-5"></i>
+                                    <h4 class="mb-0">Certificate</h4>
                                 </div>
-                                <div class="col-12 mt-3 text-center">
-                                    <div id="formSuccess" class="alert alert-success d-none" role="alert">
-                                        Message sent successfully! I'll get back to you soon.
-                                    </div>
+                                <h5 class="text-accent mb-2">Udemy</h5>
+                                <p class="mb-0 text-muted">Master Generative AI & Generative AI tools (ChatGPT & more)
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- March 2024 -->
+                        <div class="timeline-row fade-in-up">
+                            <div class="timeline-time">
+                                <span class="badge bg-primary">March 2024</span>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-certificate text-info me-2 fs-5"></i>
+                                    <h4 class="mb-0">Certificate</h4>
                                 </div>
+                                <h5 class="text-accent mb-2">CSE Pathshala</h5>
+                                <p class="mb-0 text-muted">Unrevealing basic Python towards ML/AI</p>
+                            </div>
+                        </div>
+
+                        <!-- March 2024 Achievement -->
+                        <div class="timeline-row fade-in-up timeline-inverted text-lg-end">
+                            <div class="timeline-time">
+                                <span class="badge bg-primary">March 2024</span>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="d-flex align-items-center justify-content-lg-end mb-2">
+                                    <i class="fas fa-trophy text-warning me-2 fs-5"></i>
+                                    <h4 class="mb-0">Achievement</h4>
+                                </div>
+                                <p class="mb-0 text-muted">Secured Runner-Up position in HackWithVertos 1.0 (24-hour
+                                    Hackathon).</p>
+                            </div>
+                        </div>
+
+                        <!-- November 2023 -->
+                        <div class="timeline-row fade-in-up">
+                            <div class="timeline-time">
+                                <span class="badge bg-primary">November 2023</span>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-certificate text-info me-2 fs-5"></i>
+                                    <h4 class="mb-0">Certificate</h4>
+                                </div>
+                                <h5 class="text-accent mb-2">freeCodeCamp</h5>
+                                <p class="mb-0 text-muted">Legacy Responsive Web Design V8</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Education Section -->
+    <section id="education" class="section-padding">
+        <div class="container border-top-glow">
+            <div class="section-header text-center fade-in-up">
+                <span class="section-subtitle">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line mx-auto"></div>
+            </div>
+
+            <div class="row g-4 mt-4 justify-content-center">
+                <!-- Education 1 -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="edu-card card-premium p-4 rounded-4 shadow-sm h-100 border text-center">
+                        <div class="edu-icon mb-3 text-primary mx-auto">
+                            <i class="fas fa-university fa-3x"></i>
+                        </div>
+                        <span class="badge bg-primary mb-3">August 2023 - Present</span>
+                        <h4 class="fw-bold mb-2">Lovely Professional University</h4>
+                        <p class="text-muted small mb-2">Punjab, India</p>
+                        <h5 class="text-accent mb-3">Bachelor of Technology</h5>
+                        <p class="mb-2">Computer Science & Engineering</p>
+                        <hr class="w-25 mx-auto">
+                        <p class="fw-bold text-dark mb-0">CGPA: 7.56</p>
+                    </div>
+                </div>
+
+                <!-- Education 2 -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="edu-card card-premium p-4 rounded-4 shadow-sm h-100 border text-center">
+                        <div class="edu-icon mb-3 text-primary mx-auto">
+                            <i class="fas fa-school fa-3x"></i>
+                        </div>
+                        <span class="badge bg-primary mb-3">April 2022 - March 2023</span>
+                        <h4 class="fw-bold mb-2">St. Dominic Savio College</h4>
+                        <p class="text-muted small mb-2">Uttar Pradesh, India</p>
+                        <h5 class="text-accent mb-3">Intermediate</h5>
+                        <p class="mb-2">Class XII</p>
+                        <hr class="w-25 mx-auto">
+                        <p class="fw-bold text-dark mb-0">Percentage: 72.7%</p>
+                    </div>
+                </div>
+
+                <!-- Education 3 -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="edu-card card-premium p-4 rounded-4 shadow-sm h-100 border text-center">
+                        <div class="edu-icon mb-3 text-primary mx-auto">
+                            <i class="fas fa-book-open fa-3x"></i>
+                        </div>
+                        <span class="badge bg-primary mb-3">April 2020 - March 2021</span>
+                        <h4 class="fw-bold mb-2">St. Dominic Savio College</h4>
+                        <p class="text-muted small mb-2">Uttar Pradesh, India</p>
+                        <h5 class="text-accent mb-3">Matriculation</h5>
+                        <p class="mb-2">Class X</p>
+                        <hr class="w-25 mx-auto">
+                        <p class="fw-bold text-dark mb-0">Percentage: 89.8%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8 & 9. Contact / Connect Section -->
+    <section id="contact" class="section-padding bg-alt">
+        <div class="container border-top-glow">
+            <div class="row align-items-center">
+                <!-- Connect Professionally -->
+                <div class="col-lg-5 fade-in-right mb-5 mb-lg-0">
+                    <div class="contact-info-wrapper">
+                        <span class="section-subtitle">Reach Out</span>
+                        <h2 class="section-title pb-3 border-bottom">Connect Professionally</h2>
+                        <p class="mt-4 mb-5 text-muted">I am actively looking for opportunities and collaborations. Feel
+                            free to connect with me or send a message directly.</p>
+
+                        <div class="contact-detail d-flex align-items-center mb-4">
+                            <div class="contact-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+                                style="width: 50px; height: 50px;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email Me</h5>
+                                <a href="mailto:9981abhisheksingh@gmail.com"
+                                    class="text-decoration-none text-body">9981abhisheksingh@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail d-flex align-items-center mb-4">
+                            <div class="contact-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+                                style="width: 50px; height: 50px;">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Call Me</h5>
+                                <a href="tel:+916386090103" class="text-decoration-none text-body">+91-6386090103</a>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <h6 class="text-uppercase tracking-wider mb-3 fw-bold text-primary">Social Profiles</h6>
+                            <div class="d-flex gap-3">
+                                <a href="https://linkedin.com/in/abhisheksingh63/" target="_blank"
+                                    class="btn btn-outline-secondary rounded-circle icon-btn"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/AbhishekSingh63" target="_blank"
+                                    class="btn btn-outline-secondary rounded-circle icon-btn"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Send a Message -->
+                <div class="col-lg-6 offset-lg-1 fade-in-left">
+                    <div class="contact-form-container card-premium p-5 rounded-4 shadow-lg">
+                        <h3 class="mb-4">Send a Message</h3>
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                            <input type="hidden" name="subject" value="New Inquiry via Portfolio">
+
+                            <div class="mb-4">
+                                <label for="name" class="form-label text-sm fw-semibold">Your Name</label>
+                                <input type="text" class="form-control form-control-lg custom-input" id="name"
+                                    name="name" required placeholder="John Doe">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="email" class="form-label text-sm fw-semibold">Email Address</label>
+                                <input type="email" class="form-control form-control-lg custom-input" id="email"
+                                    name="email" required placeholder="john@example.com">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="message" class="form-label text-sm fw-semibold">Message</label>
+                                <textarea class="form-control form-control-lg custom-input" id="message" name="message"
+                                    rows="4" required placeholder="How can we help each other?"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold shadow-sm">Send Message <i
+                                    class="fas fa-paper-plane ms-2"></i></button>
+
+                            <div id="formSuccess" class="alert alert-success mt-3 d-none">
+                                <i class="fas fa-check-circle me-2"></i> Your message has been sent successfully!
                             </div>
                         </form>
                     </div>
@@ -494,76 +627,30 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer py-5 text-center">
-        <div class="container">
-            <div class="footer-logo mb-3">
-                <span class="brand-logo">&lt;Dev/&gt;</span>
+    <!-- 10. Footer -->
+    <footer class="site-footer py-4 border-top">
+        <div class="container border-top-glow-footer pt-2">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="brand-logo fs-5">&lt;Abhishek /&gt;</span>
+                    <p class="text-muted mt-2 mb-0 small">© 2026 Abhishek Kumar Singh. All rights reserved.</p>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-links-footer">
+                        <a href="assets/Abhishek_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download CV" download title="Download CV">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                        <a href="https://github.com/AbhishekSingh63" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/abhisheksingh63" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="social-icons mb-4">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:9981abhisheksingh@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-            <p class="text-muted mb-0">© 2026 Abhishek Kumar Singh. All rights reserved.</p>
-            <p class="text-muted small">Built with HTML5, Bootstrap 5 & Vanilla JS</p>
         </div>
-        <button id="backToTop" class="btn btn-primary" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+        <button id="backToTop" class="back-to-top-btn" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
     </footer>
-
-    <!-- Modals -->
-    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Car Sales Analysis Dashboard</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/project1.svg" class="img-fluid rounded mb-4" alt="Dashboard">
-                    <p>Developed an interactive Power BI dashboard to analyze car sales performance, revenue, and time
-                        trends. Built KPIs, top brand/model visuals, and monthly/yearly trend analysis to provide
-                        actionable business insights.</p>
-                    <ul>
-                        <li><strong>Tech Stack:</strong> Power BI, DAX, Data Modeling, Data Visualization</li>
-                        <li><strong>Highlights:</strong> Enabled drill-down analysis using interactive slicers,
-                            improving decision-making and reporting efficiency.</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-outline-light" data-bs-dismiss="modal">Close</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">iOS-Scientific Confetti Calculator</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/project2.svg" class="img-fluid rounded mb-4" alt="Calculator">
-                    <p>Built a high-accuracy scientific calculator featuring over 30 functions with 99.9% accuracy.
-                        Designed with a modern iOS-inspired UI to improve usability and reduce input errors.</p>
-                    <ul>
-                        <li><strong>Tech Stack:</strong> React.js, JavaScript, CSS, HTML</li>
-                        <li><strong>Performance:</strong> Optimized UX to execute computations in &lt;100ms. Delivered a
-                            fully responsive solution with a 98/100 Google Lighthouse score and interactive confetti
-                            animations.</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-outline-light" data-bs-dismiss="modal">Close</a>
-                    <a href="#" class="btn btn-primary"><i class="fab fa-github me-2"></i>View Code</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
