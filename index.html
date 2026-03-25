@@ -39,11 +39,11 @@
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#training">Training</a></li>
                     <li class="nav-item"><a class="nav-link" href="#achievements">Timeline</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
                         <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode"
@@ -83,10 +83,12 @@
 
                     <div class="hero-btns mt-4 d-flex flex-wrap gap-3 align-items-center">
                         <a href="#projects" class="btn btn-primary btn-lg shadow-sm">View Projects</a>
-                        <a href="assets/Abhishek_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-lg shadow-sm" download>
+                        <a href="assets/Abhishek_CV.pdf" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-primary btn-lg shadow-sm" download>
                             Download CV <i class="fas fa-cloud-download-alt ms-2"></i>
                         </a>
-                        <a href="#contact" class="btn btn-link link-secondary fw-semibold text-decoration-none px-0 ms-2">
+                        <a href="#contact"
+                            class="btn btn-link link-secondary fw-semibold text-decoration-none px-0 ms-2">
                             Let's Talk <i class="fas fa-arrow-right ms-1"></i>
                         </a>
                     </div>
@@ -118,7 +120,7 @@
 
                     <p class="about-text mx-auto" style="max-width: 800px;">
                         I am a passionate B.Tech student in Computer Science and Engineering at Lovely Professional
-                        University. I specialize in web development and data analytics. My focus is on building
+                        University. I specialize in data analytics and web development. My focus is on building
                         practical, data-driven solutions and responsive web applications. I pride myself on being a
                         quick learner with strong problem-solving skills, always ready to adapt to new technologies and
                         collaborate effectively in team environments.
@@ -145,7 +147,68 @@
         </div>
     </section>
 
-    <!-- 3. Skills Section -->
+    <!-- 3. Education Section -->
+    <section id="education" class="section-padding">
+        <div class="container border-top-glow">
+            <div class="section-header text-center fade-in-up">
+                <span class="section-subtitle">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line mx-auto"></div>
+            </div>
+
+            <div class="row g-4 mt-4 justify-content-center">
+                <!-- Education 1 -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="edu-card card-premium p-4 rounded-4 shadow-sm h-100 border text-center">
+                        <div class="edu-icon mb-3 text-primary mx-auto">
+                            <i class="fas fa-university fa-3x"></i>
+                        </div>
+                        <span class="badge bg-primary mb-3">August 2023 - Present</span>
+                        <h4 class="fw-bold mb-2">Lovely Professional University</h4>
+                        <p class="text-muted small mb-2">Punjab, India</p>
+                        <h5 class="text-accent mb-3">Bachelor of Technology</h5>
+                        <p class="mb-2">Computer Science &amp; Engineering</p>
+                        <hr class="w-25 mx-auto">
+                        <p class="fw-bold text-dark mb-0">CGPA: 7.56</p>
+                    </div>
+                </div>
+
+                <!-- Education 2 -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="edu-card card-premium p-4 rounded-4 shadow-sm h-100 border text-center">
+                        <div class="edu-icon mb-3 text-primary mx-auto">
+                            <i class="fas fa-school fa-3x"></i>
+                        </div>
+                        <span class="badge bg-primary mb-3">April 2022 - March 2023</span>
+                        <h4 class="fw-bold mb-2">St. Dominic Savio College</h4>
+                        <p class="text-muted small mb-2">Uttar Pradesh, India</p>
+                        <h5 class="text-accent mb-3">Intermediate</h5>
+                        <p class="mb-2">Class XII</p>
+                        <hr class="w-25 mx-auto">
+                        <p class="fw-bold text-dark mb-0">Percentage: 72.7%</p>
+                    </div>
+                </div>
+
+                <!-- Education 3 -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="edu-card card-premium p-4 rounded-4 shadow-sm h-100 border text-center">
+                        <div class="edu-icon mb-3 text-primary mx-auto">
+                            <i class="fas fa-book-open fa-3x"></i>
+                        </div>
+                        <span class="badge bg-primary mb-3">April 2020 - March 2021</span>
+                        <h4 class="fw-bold mb-2">St. Dominic Savio College</h4>
+                        <p class="text-muted small mb-2">Uttar Pradesh, India</p>
+                        <h5 class="text-accent mb-3">Matriculation</h5>
+                        <p class="mb-2">Class X</p>
+                        <hr class="w-25 mx-auto">
+                        <p class="fw-bold text-dark mb-0">Percentage: 89.8%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Skills Section -->
     <section id="skills" class="section-padding">
         <div class="container">
             <div class="section-header text-center fade-in-up">
@@ -248,25 +311,34 @@
                     <div class="premium-card h-100 d-flex flex-column p-4 p-md-5">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <span class="project-date badge bg-primary text-white py-2 px-3">November 2025</span>
-                            <a href="https://github.com/AbhishekSingh63" target="_blank" class="text-body fs-4"><i
-                                    class="fab fa-github"></i></a>
+                            <div class="d-flex gap-3 align-items-center">
+                                <a href="https://shoppers-intention-analysis.onrender.com/" target="_blank"
+                                    class="btn btn-outline-primary btn-sm rounded-pill px-3">View Project</a>
+                                <a href="https://github.com/AbhishekSingh63/Shoppers-Intention-Analysis" target="_blank" class="text-body fs-4"
+                                    aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                         <h3 class="project-title mb-4">Online Shoppers Purchasing Intention Prediction</h3>
                         <ul class="text-muted mb-4 ps-3 flex-grow-1" style="line-height: 1.8;">
-                            <li>Developed a predictive machine learning pipeline to forecast customer purchase intent
-                                using behavioral ecommerce session data.</li>
-                            <li>Conducted exploratory data analysis, feature engineering, and model benchmarking across
-                                Logistic Regression, Random Forest, and KNN classifiers.</li>
-                            <li>Implemented dimensionality reduction using Principal Component Analysis and deployed an
-                                interactive Streamlit dashboard for real-time inference.</li>
+                            <li>Developed a full-stack ML web application using Flask with a modular backend
+                                (<code>ml_models.py</code>, <code>routes.py</code>, <code>data_utils.py</code>),
+                                enabling real-time purchase intent prediction via REST APIs.</li>
+                            <li>Implemented and evaluated 10 ML models (Logistic Regression, Random Forest, KNN, SVM,
+                                Decision Tree, Naive Bayes, MLP, Bagging, AdaBoost, K-Means) with model persistence
+                                using Joblib and dynamic performance benchmarking.</li>
+                            <li>Built an interactive analytics dashboard with PCA visualizations, correlation analysis,
+                                and model comparison using Chart.js; deployed on Render using Gunicorn with a
+                                responsive UI.</li>
                         </ul>
                         <div class="project-tech pt-3 border-top">
                             <span class="skill-badge">Python</span>
+                            <span class="skill-badge">Flask</span>
                             <span class="skill-badge">Pandas</span>
                             <span class="skill-badge">NumPy</span>
                             <span class="skill-badge">Scikit-Learn</span>
-                            <span class="skill-badge">Matplotlib</span>
-                            <span class="skill-badge">Streamlit</span>
+                            <span class="skill-badge">Joblib</span>
+                            <span class="skill-badge">Chart.js</span>
+                            <span class="skill-badge">JavaScript</span>
                         </div>
                     </div>
                 </div>
@@ -275,24 +347,31 @@
                 <div class="col-lg-6 fade-in-up" style="animation-delay: 0.1s;">
                     <div class="premium-card h-100 d-flex flex-column p-4 p-md-5">
                         <div class="d-flex justify-content-between align-items-center mb-3">
-                            <span class="project-date badge bg-primary text-white py-2 px-3">July 2025</span>
-                            <a href="https://github.com/AbhishekSingh63" target="_blank" class="text-body fs-4"><i
-                                    class="fab fa-github"></i></a>
+                            <span class="project-date badge bg-primary text-white py-2 px-3">February 2026</span>
+                            <div class="d-flex gap-3 align-items-center">
+                                <a href="https://prep-iq-ebon.vercel.app/" target="_blank"
+                                    class="btn btn-outline-primary btn-sm rounded-pill px-3">View Project</a>
+                                <a href="https://github.com/AbhishekSingh63/Prep_IQ" target="_blank"
+                                    class="text-body fs-4" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
-                        <h3 class="project-title mb-4">iOS Scientific Confetti Calculator</h3>
+                        <h3 class="project-title mb-4">AI-Powered Mock Interview & Skill Analysis Platform</h3>
                         <ul class="text-muted mb-4 ps-3 flex-grow-1" style="line-height: 1.8;">
-                            <li>Engineered a high-precision scientific calculator supporting 30+ mathematical functions
-                                with an intuitive iOS-inspired interface.</li>
-                            <li>Enhanced computational efficiency to process complex operations under 100ms, improving
-                                interaction speed and usability.</li>
-                            <li>Designed responsive UI components with interactive visual feedback, achieving a 98/100
-                                Google Lighthouse performance score.</li>
+                            <li>Engineered an AI mock interview platform using MERN and Anthropic Claude 3.5 Sonnet to
+                                generate role-specific technical and behavioral questions from resumes.</li>
+                            <li>Built a responsive glassmorphic interface with React and Vite, enabling real-time AI
+                                evaluation and visual insights into skills, trends, and topic-wise accuracy.</li>
+                            <li>Implemented a scalable Express.js backend with token-based authentication, MongoDB
+                                storage, and session logging for structured progress tracking.</li>
                         </ul>
                         <div class="project-tech pt-3 border-top">
                             <span class="skill-badge">React.js</span>
-                            <span class="skill-badge">JavaScript</span>
-                            <span class="skill-badge">HTML</span>
-                            <span class="skill-badge">CSS</span>
+                            <span class="skill-badge">Node.js</span>
+                            <span class="skill-badge">Express.js</span>
+                            <span class="skill-badge">MongoDB</span>
+                            <span class="skill-badge">JWT</span>
+                            <span class="skill-badge">Claude 3.5 Sonnet API</span>
+                            <span class="skill-badge">Recharts</span>
                         </div>
                     </div>
                 </div>
@@ -310,34 +389,48 @@
             </div>
 
             <div class="row mt-5 justify-content-center">
-                <div class="col-lg-8 fade-in-up">
-                    <div
-                        class="training-card card-premium p-4 p-md-5 rounded-4 shadow-sm border position-relative overflow-hidden">
+                <div class="col-lg-10 fade-in-up">
+                    <div class="training-card card-premium p-4 p-md-5 rounded-4 shadow-sm border position-relative overflow-hidden">
                         <div class="position-absolute top-0 end-0 p-4 opacity-10"
                             style="font-size: 8rem; color: var(--primary-color); z-index: 0; transform: translate(20%, -20%);">
                             <i class="fas fa-medal"></i>
                         </div>
 
                         <div class="position-relative z-1">
-                            <div
-                                class="d-flex justify-content-between align-items-md-center flex-column flex-md-row mb-4">
+                            <div class="d-flex justify-content-between align-items-md-center flex-column flex-md-row mb-4">
                                 <div>
                                     <h5 class="text-accent fw-bold mb-1">CipherSchools</h5>
-                                    <h3 class="fw-bold mb-0">Data Structures & Algorithms (C++)</h3>
+                                    <h3 class="fw-bold mb-0">Data Structures &amp; Algorithms (C++)</h3>
                                 </div>
-                                <span
-                                    class="badge bg-primary fs-6 py-2 px-3 mt-3 mt-md-0 align-self-start align-self-md-center">June
-                                    2025</span>
+                                <div class="d-flex flex-column align-items-md-end gap-2 mt-3 mt-md-0">
+                                    <span class="badge bg-primary fs-6 py-2 px-3 align-self-start align-self-md-end">June 2025</span>
+                                </div>
                             </div>
 
-                            <ul class="text-muted mb-0 ps-3" style="line-height: 1.8; font-size: 1.05rem;">
-                                <li>Completed intensive training covering core algorithmic concepts including arrays,
-                                    linked lists, trees, graphs, and dynamic programming.</li>
-                                <li>Implemented optimized solutions to practical coding challenges to strengthen
-                                    problem-solving and computational thinking.</li>
-                                <li>Improved coding efficiency and interview readiness through consistent hands-on
-                                    practice.</li>
-                            </ul>
+                            <div class="training-cert-row">
+                                <!-- Certificate Thumbnail -->
+                                <div class="training-cert-thumb">
+                                     <div class="cert-thumb-wrapper"
+                                        data-cert-src="assets/certificates/cert-cipherschools-dsa.pdf"
+                                        data-cert-title="CipherSchools – Data Structures &amp; Algorithms (C++)">
+                                        <iframe
+                                            src="assets/certificates/cert-cipherschools-dsa.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                            class="cert-pdf-thumb"
+                                            title="CipherSchools DSA Certificate"></iframe>
+                                    </div>
+                                </div>
+                                <!-- Course Info -->
+                                <div class="training-cert-content">
+                                    <ul class="text-muted mb-0 ps-3" style="line-height: 1.8; font-size: 1.05rem;">
+                                        <li>Completed intensive training covering core algorithmic concepts including arrays,
+                                            linked lists, trees, graphs, and dynamic programming.</li>
+                                        <li>Implemented optimized solutions to practical coding challenges to strengthen
+                                            problem-solving and computational thinking.</li>
+                                        <li>Improved coding efficiency and interview readiness through consistent hands-on
+                                            practice.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -374,7 +467,7 @@
                             </div>
                         </div>
 
-                        <!-- November 2025 -->
+                        <!-- November 2025 – NPTEL Certificate -->
                         <div class="timeline-row fade-in-up timeline-inverted text-lg-end">
                             <div class="timeline-time">
                                 <span class="badge bg-primary">November 2025</span>
@@ -386,12 +479,21 @@
                                     <h4 class="mb-0">Certificate</h4>
                                 </div>
                                 <h5 class="text-accent mb-2">NPTEL</h5>
-                                <p class="mb-0 text-muted">Privacy and Security in Online Social Media - IIIT Hyderabad
-                                </p>
+                                <p class="mb-2 text-muted">Privacy and Security in Online Social Media - IIIT Hyderabad</p>
+                                <div class="timeline-cert-thumb">
+                                    <div class="cert-thumb-wrapper mt-3"
+                                        data-cert-src="assets/certificates/cert-nptel-privacy.pdf"
+                                        data-cert-title="NPTEL – Privacy and Security in Online Social Media">
+                                        <iframe
+                                            src="assets/certificates/cert-nptel-privacy.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                            class="cert-pdf-thumb"
+                                            title="NPTEL Certificate"></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- August 2025 -->
+                        <!-- August 2025 – Infosys Certificate -->
                         <div class="timeline-row fade-in-up">
                             <div class="timeline-time">
                                 <span class="badge bg-primary">August 2025</span>
@@ -402,12 +504,22 @@
                                     <i class="fas fa-certificate text-info me-2 fs-5"></i>
                                     <h4 class="mb-0">Certificate</h4>
                                 </div>
-                                <h5 class="text-accent mb-2">Udemy</h5>
-                                <p class="mb-0 text-muted">Build Generative AI Apps and Solutions with No-Code Tools</p>
+                                <h5 class="text-accent mb-2">Infosys</h5>
+                                <p class="mb-2 text-muted">Build Generative AI Apps and Solutions with No-Code Tools</p>
+                                <div class="timeline-cert-thumb">
+                                    <div class="cert-thumb-wrapper mt-3"
+                                        data-cert-src="assets/certificates/cert-infosys-genai-apps.pdf"
+                                        data-cert-title="Udemy – Build Generative AI Apps with No-Code Tools">
+                                        <iframe
+                                            src="assets/certificates/cert-infosys-genai-apps.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                            class="cert-pdf-thumb"
+                                            title="Infosys Generative AI Apps Certificate"></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- July 2025 -->
+                        <!-- July 2025 – Udemy Certificate -->
                         <div class="timeline-row fade-in-up timeline-inverted text-lg-end">
                             <div class="timeline-time">
                                 <span class="badge bg-primary">July 2025</span>
@@ -418,13 +530,22 @@
                                     <i class="fas fa-certificate text-info me-2 fs-5"></i>
                                     <h4 class="mb-0">Certificate</h4>
                                 </div>
-                                <h5 class="text-accent mb-2">Udemy</h5>
-                                <p class="mb-0 text-muted">Master Generative AI & Generative AI tools (ChatGPT & more)
-                                </p>
+                                <h5 class="text-accent mb-2">Infosys</h5>
+                                <p class="mb-2 text-muted">ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM</p>
+                                <div class="timeline-cert-thumb">
+                                    <div class="cert-thumb-wrapper mt-3"
+                                        data-cert-src="assets/certificates/cert-infosys-chatgpt.pdf"
+                                        data-cert-title="Udemy – Master Generative AI &amp; Generative AI tools">
+                                        <iframe
+                                            src="assets/certificates/cert-infosys-chatgpt.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                            class="cert-pdf-thumb"
+                                            title="Udemy Master Generative AI Certificate"></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- March 2024 -->
+                        <!-- March 2024 – CSE Pathshala Certificate -->
                         <div class="timeline-row fade-in-up">
                             <div class="timeline-time">
                                 <span class="badge bg-primary">March 2024</span>
@@ -436,11 +557,21 @@
                                     <h4 class="mb-0">Certificate</h4>
                                 </div>
                                 <h5 class="text-accent mb-2">CSE Pathshala</h5>
-                                <p class="mb-0 text-muted">Unrevealing basic Python towards ML/AI</p>
+                                <p class="mb-2 text-muted">Unrevealing basic Python towards ML/AI</p>
+                                <div class="timeline-cert-thumb">
+                                    <div class="cert-thumb-wrapper mt-3"
+                                        data-cert-src="assets/certificates/cert-csepathshala-python.pdf"
+                                        data-cert-title="CSE Pathshala – Unrevealing basic Python towards ML/AI">
+                                        <iframe
+                                            src="assets/certificates/cert-csepathshala-python.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                            class="cert-pdf-thumb"
+                                            title="CSE Pathshala Python Certificate"></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- March 2024 Achievement -->
+                        <!-- March 2024 – Hackathon Achievement (no image) -->
                         <div class="timeline-row fade-in-up timeline-inverted text-lg-end">
                             <div class="timeline-time">
                                 <span class="badge bg-primary">March 2024</span>
@@ -456,7 +587,7 @@
                             </div>
                         </div>
 
-                        <!-- November 2023 -->
+                        <!-- November 2023 – freeCodeCamp Certificate -->
                         <div class="timeline-row fade-in-up">
                             <div class="timeline-time">
                                 <span class="badge bg-primary">November 2023</span>
@@ -468,7 +599,17 @@
                                     <h4 class="mb-0">Certificate</h4>
                                 </div>
                                 <h5 class="text-accent mb-2">freeCodeCamp</h5>
-                                <p class="mb-0 text-muted">Legacy Responsive Web Design V8</p>
+                                <p class="mb-2 text-muted">Legacy Responsive Web Design V8</p>
+                                <div class="timeline-cert-thumb">
+                                    <div class="cert-thumb-wrapper mt-3"
+                                        data-cert-src="assets/certificates/cert-freecodecamp-rwd.pdf"
+                                        data-cert-title="freeCodeCamp – Legacy Responsive Web Design V8">
+                                        <iframe
+                                            src="assets/certificates/cert-freecodecamp-rwd.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                            class="cert-pdf-thumb"
+                                            title="freeCodeCamp Responsive Web Design Certificate"></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -478,66 +619,13 @@
         </div>
     </section>
 
-    <!-- 7. Education Section -->
-    <section id="education" class="section-padding">
-        <div class="container border-top-glow">
-            <div class="section-header text-center fade-in-up">
-                <span class="section-subtitle">Academic Background</span>
-                <h2 class="section-title">Education</h2>
-                <div class="section-line mx-auto"></div>
-            </div>
-
-            <div class="row g-4 mt-4 justify-content-center">
-                <!-- Education 1 -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="edu-card card-premium p-4 rounded-4 shadow-sm h-100 border text-center">
-                        <div class="edu-icon mb-3 text-primary mx-auto">
-                            <i class="fas fa-university fa-3x"></i>
-                        </div>
-                        <span class="badge bg-primary mb-3">August 2023 - Present</span>
-                        <h4 class="fw-bold mb-2">Lovely Professional University</h4>
-                        <p class="text-muted small mb-2">Punjab, India</p>
-                        <h5 class="text-accent mb-3">Bachelor of Technology</h5>
-                        <p class="mb-2">Computer Science & Engineering</p>
-                        <hr class="w-25 mx-auto">
-                        <p class="fw-bold text-dark mb-0">CGPA: 7.56</p>
-                    </div>
-                </div>
-
-                <!-- Education 2 -->
-                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="edu-card card-premium p-4 rounded-4 shadow-sm h-100 border text-center">
-                        <div class="edu-icon mb-3 text-primary mx-auto">
-                            <i class="fas fa-school fa-3x"></i>
-                        </div>
-                        <span class="badge bg-primary mb-3">April 2022 - March 2023</span>
-                        <h4 class="fw-bold mb-2">St. Dominic Savio College</h4>
-                        <p class="text-muted small mb-2">Uttar Pradesh, India</p>
-                        <h5 class="text-accent mb-3">Intermediate</h5>
-                        <p class="mb-2">Class XII</p>
-                        <hr class="w-25 mx-auto">
-                        <p class="fw-bold text-dark mb-0">Percentage: 72.7%</p>
-                    </div>
-                </div>
-
-                <!-- Education 3 -->
-                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="edu-card card-premium p-4 rounded-4 shadow-sm h-100 border text-center">
-                        <div class="edu-icon mb-3 text-primary mx-auto">
-                            <i class="fas fa-book-open fa-3x"></i>
-                        </div>
-                        <span class="badge bg-primary mb-3">April 2020 - March 2021</span>
-                        <h4 class="fw-bold mb-2">St. Dominic Savio College</h4>
-                        <p class="text-muted small mb-2">Uttar Pradesh, India</p>
-                        <h5 class="text-accent mb-3">Matriculation</h5>
-                        <p class="mb-2">Class X</p>
-                        <hr class="w-25 mx-auto">
-                        <p class="fw-bold text-dark mb-0">Percentage: 89.8%</p>
-                    </div>
-                </div>
-            </div>
+    <!-- Lightbox Modal -->
+    <div id="certModal" role="dialog" aria-modal="true" aria-label="Certificate Preview">
+        <div class="modal-img-wrap">
+            <button id="certModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+            <iframe id="certModalFrame" src="" class="cert-modal-frame" title="Certificate"></iframe>
         </div>
-    </section>
+    </div>
 
     <!-- 8 & 9. Contact / Connect Section -->
     <section id="contact" class="section-padding bg-alt">
@@ -638,7 +726,8 @@
 
                 <div class="col-md-6 text-center text-md-end">
                     <div class="social-links-footer">
-                        <a href="assets/Abhishek_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download CV" download title="Download CV">
+                        <a href="assets/Abhishek_CV.pdf" target="_blank" rel="noopener noreferrer"
+                            aria-label="Download CV" download title="Download CV">
                             <i class="fas fa-file-pdf"></i>
                         </a>
                         <a href="https://github.com/AbhishekSingh63" target="_blank" aria-label="GitHub"><i

@@ -181,4 +181,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // --- 8. Certificate Lightbox ---
+    const certModal      = document.getElementById('certModal');
+    const certModalFrame = document.getElementById('certModalFrame');
+    const certModalClose = document.getElementById('certModalClose');
+
+    function openCertModal(src, title) {
+        if (!certModal || !certModalFrame) return;
+        certModalFrame.src = src;
+        certModalFrame.title = title || 'Certificate';
+        certModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertModal() {
+        if (!certModal) return;
+        certModal.classList.remove('open');
+        document.body.style.overflow = '';
+        // Clear src after fade-out so old PDF doesn’t flash on reopen
+        setTimeout(() => { if (certModalFrame) certModalFrame.src = ''; }, 350);
+    }
+
+    // Event delegation – works for dynamically replaced placeholder divs too
+    document.addEventListener('click', (e) => {
+        const wrapper = e.target.closest('.cert-thumb-wrapper');
+        if (wrapper) {
+            const src   = wrapper.getAttribute('data-cert-src');
+            const title = wrapper.getAttribute('data-cert-title');
+            if (src) openCertModal(src, title);
+        }
+    });
+
+    // Close on button click
+    certModalClose?.addEventListener('click', closeCertModal);
+
+    // Close on backdrop click (outside the image)
+    certModal?.addEventListener('click', (e) => {
+        if (e.target === certModal) closeCertModal();
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeCertModal();
+    });
+
 });
